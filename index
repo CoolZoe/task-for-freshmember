@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>京东（JD.COM）-正品低价、品质保障、配送及时、轻松购物！</title>
+    <style type="text/css">
+    #guide{
+        border-bottom: 1px solid #ddddd;
+        background-color: #e3e4e5;
+        height: 30px;
+        line-height: 30px;
+        width: 1366px;
+        color: #999999;
+        z-index: 99;
+    }
+    .short{
+        height: 30px;
+        width: 1190px;
+        line-height:30px;
+        color: #999999;
+
+    }
+    .f1{
+        float: left;
+        list-style: none;
+    }
+    .dropdown{
+        margin-left: 200px;
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top:10px;
+    }
+    .city{
+        height: 28px;
+        line-height: 28px;
+        padding-left: 7px;
+        padding-right: 7px;
+        position: relative;
+    }
+    .layer{
+        line-height: 24px;
+        position: absolute;
+        top: 30px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background-color: #fff;
+        box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+        width: 320px;
+        height: 215px;
+        display: none;
+        padding: 10px；
+    }
+    .word{
+        font-size: 12px;
+        position: absolute;
+        left:18px;
+        top:4px;
+    }
+    .dropdown:hover .layer{
+        display: block;
+    }
+    .dropdown:hover{
+        background-color: white;
+    }
+    .beijing{
+        margin: 10px;
+        font-size: 12px;
+        text-align: center;
+        background-color: red;
+        color:white;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .unchosen1{
+        margin: 10px;
+        font-size: 12px;
+        text-align: center;
+        background-color: white;
+        color:#999999;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .unchosen1:hover{
+        background-color:#f3f1f2;
+        color: #9a5f63;
+    }
+    .unchosen2{
+        margin: 10px;
+        font-size: 12px;
+        color:#999999;
+        text-align: center;
+        background-color: white;
+        width: 40px;
+        height: 20px;
+        position: absolute;
+        top:0px;
+        left: 55px;
+        cursor: pointer;
+    }
+    .unchosen2:hover{
+        background-color:#f3f1f2;
+        color: #9a5f63;
+    }
+    .f2{
+        list-style: none;
+        font-size: 12px;
+    }
+    .p1{
+        position: absolute;
+        left: 565px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p2{
+        position: absolute;
+        left: 645px;
+        top: 12px;
+        color: red;
+        cursor: pointer;
+    }
+    .s1{
+        position: absolute;
+        left: 705px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .p3{
+        position: absolute;
+        left: 720px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .s2{
+        position: absolute;
+        left: 780px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .p4{
+        position: absolute;
+        left: 795px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .s3{
+        position: absolute;
+        left: 870px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .s4{
+        position: absolute;
+        left: 940px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .s5{
+        position: absolute;
+        left: 1015px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .s6{
+        position: absolute;
+        left: 1100px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+        }
+    .s7{
+        position: absolute;
+        left: 1190px;
+        top: 22px;
+        overflow: hidden;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .p5{
+        position: absolute;
+        left: 880px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p6{
+        position: absolute;
+        left: 955px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p7{
+        position: absolute;
+        left: 1030px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p8{
+        position: absolute;
+        left: 1115px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p9{
+        position: absolute;
+        left: 1210px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .p1:hover{
+        color:#9a5f63;
+    }
+    .p2:hover{
+        color:#9a5f63;
+    }
+    .QRcode{
+        position: absolute;
+        left:1200px;
+        top: 40px;
+    }
+    .qr{
+        width: 65px;
+        height: 65px;
+        border-style: solid;
+        border-color: #e3e4e5;
+        border-width: 2px;
+    }
+    #head{
+        width: 1366px;
+        height: 140px;
+        z-index: 90;
+    }
+    .u{
+        width: 1190px;
+        height: 140px;
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        left: 55px;
+        background-color: white;
+        width: 190px;
+        height: 170px;
+    }
+    .jdlogo{
+        width: 190px;
+        height: 170px;
+        box-shadow: 0px -1px 10px rgba(0,0,0,.1);
+    }
+    .searchform{
+        position: absolute;
+        left:400px;
+        top:65px;
+    }
+    .form{
+        border-color: red;
+        width: 500px;
+        height: 30px;
+        border-width: 1px;
+        font-size: 12px;
+        color: #999999;
+    }
+    .searchbutton{
+        width: 50px;
+        height: 35px;
+        background-color: red;
+        border-color: red;
+        border-width: 1px;
+        position: absolute;
+        left: 900px;
+        top: 64px;
+    }
+    </style>
+</head>
+<body>
+<div id="guide">
+    <div class="short">
+        <ul class="f1">
+            <li class="dropdown">
+                <div class="city">
+                    <span class="word">北京</span>
+                </div>
+                <div class="layer">
+                    <div class="inner_word">
+                        <div class="beijing">北京</div>
+                        <div class="unchosen1">山西</div>
+                        <div class="unchosen1">内蒙古</div>
+                        <div class="unchosen1">福建</div>
+                        <div class="unchosen1">江西</div>
+                        <div class="unchosen1">西藏</div>
+                        <div class="unchosen1">新疆</div>
+                        <div class="unchosen2">上海</div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <ul class="f2">
+            <li class="p1">你好，请登录</li>
+            <li class="p2">免费注册</li>
+            <li class="s1"></li>
+            <li class="p3">我的订单</li>
+            <li class="s2"></li>
+            <li class="p4">我的京东</li>
+            <li class="s3"></li>
+            <li class="p5">京东会员</li>
+            <li class="s4"></li>
+            <li class="p6">企业采购</li>
+            <li class="s5"></li>
+            <li class="p7">客户服务</li>
+            <li class="s6"></li>
+            <li class="p8">网站导航</li>
+            <li class="s7"></li>
+            <li class="p9">手机京东</li>
+        </ul>
+        <div class="QRcode">
+            <img src="https://misc.360buyimg.com/mtd/pc/index/home/images/mobile_qrcode@2x.jpg" class="qr">
+        </div>
+    </div>
+</div>
+<div id="head">
+    <div class="u">
+        <div class="logo">
+            <img src="https://misc.360buyimg.com/mtd/pc/index/home/images/logo.v2@2x.png" class="jdlogo">
+        </div>
+        <div class="search">
+            <div class="searchform">
+                <input type="text" class="form" value="电吹风">
+            </div>
+        </div>
+            <div class="searchbutton">
+            </div>
+    </div>
+    <div class="trolley"></div>
+
+</div>
+
+</body>
+</html>
